@@ -38,9 +38,9 @@ public class Common01AdjustablePanel extends RelativeLayout {
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
 
-        parentLayout = findViewById(R.id.parentLayout);
-        widthBar = findViewById(R.id.widthBar);
-        heightBar = findViewById(R.id.heightBar);
+        parentLayout = (FrameLayout) findViewById(R.id.parentLayout);
+        widthBar = (AppCompatSeekBar) findViewById(R.id.widthBar);
+        heightBar = (AppCompatSeekBar) findViewById(R.id.heightBar);
 
         SeekBar.OnSeekBarChangeListener listener = new SeekBar.OnSeekBarChangeListener() {
             @Override
